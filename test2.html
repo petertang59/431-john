@@ -1,0 +1,36 @@
+<html>
+<head>
+	<link href="style.css" rel="stylesheet" />
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<video id="myVideo" autoplay >
+	        	<source src="cena.mp4" type="video/mp4"></source>
+        </video>
+<!-- <video id="myVideo" autoplay loop>
+	        	<source src="logo.mp4" type="video/mp4"></source>
+        </video> -->
+        <!-- <button id="button">Disappear!</button> -->
+<script type='text/javascript'>
+document.getElementById('myVideo').addEventListener('ended',myHandler,false);
+
+function myHandler(e) {
+if(!e) { e = window.event; }
+window.location = "index.html";
+}
+
+var d930 = new Date(2015, 11, 9, 10, 14, 0, 0), // today 9:30:00:000
+    d931 = new Date(2015, 11, 9, 10, 15, 0, 0), // today 9:31:00:000
+    t930 = d930.getTime(),
+    t931 = d931.getTime();
+
+
+console.log(t931 > t930);
+
+// setInterval(function(){
+// window.location = "index.html";
+// },5000);
+</script>
+</body>
+</html>

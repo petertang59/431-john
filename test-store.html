@@ -1,0 +1,21 @@
+<html>
+<head>
+	<link href="style.css" rel="stylesheet"/>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/script.js"></script>	
+</head>
+<body>
+	<h1>Hey look it's loaded on another page</h1>
+	<div id="retrieve"></div>
+
+<script type='text/javascript'>
+
+var localStorage = localStorage.getItem('message');
+
+    $(document).ready(function () {
+    document.getElementById("retrieve").innerHTML = 
+		localStorage.getItem('message');
+	});
+</script>
+</body>
+</html>
